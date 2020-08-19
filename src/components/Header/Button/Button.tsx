@@ -1,9 +1,10 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Button = (props: any) => {
     return (
         <div>
-            <a href="/cart.html" className="button button--cart">
+            <Link to="/cart" className="button button--cart">
                 <span>520 ₽</span>
                 <div className="button__delimiter"></div>
                 <svg
@@ -36,7 +37,7 @@ const Button = (props: any) => {
                     />
                 </svg>
                 <span>3</span>
-            </a>
+            </Link>
         </div>
     )
 }
