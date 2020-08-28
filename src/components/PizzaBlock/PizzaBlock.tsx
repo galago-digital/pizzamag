@@ -1,5 +1,7 @@
 import React from "react";
 import {Pizza} from "../../Types/CommonTypes";
+// classnames - зависимость не указана в package.json, но используется
+// поэтому приложения валится при сборке
 import classNames from "classnames";
 
 type Props = Pizza

@@ -15,6 +15,8 @@ const SortPopup = ({items}: { items: Array<string> }) =>{
         document.body.addEventListener('click',handleOutsideClick)
     },[])
     const handleOutsideClick = (e:any) =>{
+        // здесь получает событие click, в котром нет свойства path
+        // т.к. слушатель навешен на document.body - ошибка валится при любом клике
         if(!e.path.includes(sortRef.current)){
             setVisiblePopup(false)
         }
